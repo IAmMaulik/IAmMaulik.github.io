@@ -42,20 +42,23 @@ body{
     line-height: 1.6;
 }
 
+section{
+    padding: 5em 2em;
+}
+
 img{
     display: block;
     max-width: 100%;
 }
 
 
-
-
+/***********TYPOSGRAPHY*************/
 strong{
-    font-weight: bold;
+    font-weight: var(--fw-bold);
 }
 
 h1, h2, h3{
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
 }
 
@@ -84,4 +87,55 @@ h3 {font-size: var(--fs-h3);}
 .section__subtitle--intro{
     background-color: var(--clr-accent);
     font-weight: var(--ff-secondary);
+    margin-bottom: 1em;
+    padding: 0.25em 1em;
+}
+
+
+/***********NAVBAR*************/
+nav{
+    display: none;
+}
+
+
+/*********INTRO SECTION***********/
+.intro{
+    position: relative;
+}
+
+/* I may want to re-consider this part */
+.intro__img{
+    width: 65%;
+    position: relative;
+    left: 10%;
+}
+
+@media (min-width: 600px){
+    .intro{
+        display: grid;
+        grid-column-gap: 1em;
+        width: min-content;
+        margin: 0 auto;
+        grid-template-areas: 
+        "img title"
+        "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro__img{
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .section__subtitle--intro{
+        align-self: flex-start;
+        grid-column: 2;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: calc(100% + 1.5em);
+    }
 }
