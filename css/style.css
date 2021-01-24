@@ -106,8 +106,8 @@ nav{
 /* I may want to re-consider this part */
 .intro__img{
     width: 65%;
-    position: relative;
-    left: 10%;
+    /* position: relative;
+    left: 10%; */
 }
 
 @media (min-width: 600px){
@@ -137,5 +137,46 @@ nav{
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+    }
+}
+
+/*******************SKILLS SECTION********************/
+.my-services{
+    background-color: var(--clr-dark);
+    background-image: url(../images/services-bg.jpg);
+    background-size: color;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--services{
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after{
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.5;
+}
+
+.service{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px){
+    .services{
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .service + .service{
+        margin-left: 2em;
     }
 }
