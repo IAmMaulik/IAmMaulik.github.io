@@ -445,3 +445,16 @@ header{
 .social-list__link{
     padding: 0 0.5em;
 }
+
+/***********PORTFOLIO INDUVIDUAL PAGE*******/
+.portfolio-item-induvidual{
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-induvidual p{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
