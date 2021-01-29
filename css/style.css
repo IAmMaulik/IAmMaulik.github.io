@@ -239,12 +239,13 @@ header{
     position: relative;
 }
 
-/* I may want to re-consider this part */
-.intro__img{
-    width: 65%;
-    /* position: relative;
-    left: 10%; */
+@media (max-width: 600px){   
+    .intro__img{
+        width: 45%;
+        margin: 0 auto;
+    }
 }
+
 
 @media (min-width: 600px){
     .intro{
@@ -361,7 +362,7 @@ header{
     }
 }
 
-@media (max-width: 599px){   
+@media (max-width: 600px){   
     .about-me__img{
         width: 45%;
         margin: 0 auto;
